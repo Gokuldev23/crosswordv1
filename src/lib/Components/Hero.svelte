@@ -35,7 +35,9 @@
             <img class="feature-img " src="./feature1.png" alt="">
             <p>{t_feature_one_desc}</p>
         </div>
-        <img class="hero-img" src="/cross-word.png" alt="">
+        <div class="hero-img">
+            <img class="" src="/cross-word-landing-bg.png" alt="">
+        </div>
         <div class="feature-2">
             <p>{t_featureTWo}</p>
             <img class="feature-img " src="./feature2.png" alt="">
@@ -83,6 +85,8 @@
         width: 90%;
         display: block;
         margin: 0 auto;
+        padding: 20px;
+        background-color: white;
         margin-top: 40px;
         border-radius: 20px;
         box-shadow: -10px 10px 10px 2px black;
