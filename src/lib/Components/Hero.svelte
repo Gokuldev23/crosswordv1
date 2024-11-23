@@ -1,7 +1,7 @@
 <script>
     import { goto } from '$app/navigation';
 
-    let t_appName = "Cross - word"
+    let t_appName = "Pro vocab Cross-word"
     let t_mainTagLine = "Your Ultimate Prep Tool for GMAT, SAT, and GRE!"
     let t_subTagLine = "Strengthen your vocabulary, enhance problem-solving skills, and get exam-ready with daily puzzles crafted for future achievers."
     let t_featureOne = "Daily Challenges"

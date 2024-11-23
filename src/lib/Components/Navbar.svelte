@@ -17,20 +17,8 @@
 
 <nav class="container">
     <a href="/">
-        <img class="logo"  src="/logo.png" alt="">
+        <img class="logo"  src="/logo2.jpg" alt="">
     </a>
-    <!-- <div class="menu-mobile">
-        <button on:click={toggleMenu}>
-            <img src="/menu-fill@1x.webp" alt="">
-        </button>
-        {#if menuOpen}
-            <ul class="product-list">
-                <li><a href="#">How to play?</a></li>
-                <li> <a target="blank" href="https://www.gramlok.in">Gramlok</a></li>
-                <li><a href="blank"> Vidyavart </a></li>
-            </ul>
-        {/if}
-    </div> -->
 
     <div class="menu-desktop">
         <a class="help" href="/how-to-play">{t_how_to_play}</a>
