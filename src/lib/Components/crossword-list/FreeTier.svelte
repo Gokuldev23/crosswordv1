@@ -35,7 +35,7 @@
         </button>
     
         {#if expanded}
-            <div transition:slide={{duration:1000}}>
+            <div transition:slide={{duration:700}}>
                 <div transition:scale={{start:0.9}}  class="free-crosswords cw-container">
                     {#each freeTierCW as cw,i}
                         <div transition:scale on:click={()=>handleCWclicked(cw)} on:keydown 
@@ -54,7 +54,7 @@
 <style>
    
      main{
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 0 auto;
     }
      .tier-title{
@@ -76,7 +76,7 @@
     }
     .cw-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: repeat(4,1fr);
         gap: 10px;
         margin-top: 10px;
     }
@@ -99,7 +99,7 @@
     }
     @media(min-width:786px){
         .cw-container{
-            grid-template-columns:repeat(4,1fr) ;
+            grid-template-columns:repeat(5,1fr) ;
             gap: 20px;
         }
         .crossword-img{

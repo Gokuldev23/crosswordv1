@@ -10,8 +10,8 @@
     let t_feature_two_desc = "Stuck sometimes? Use Hints and tips!"
     let t_ctaBtnText = "play now"
 
-    const naviagtePuzzzlePage = () => {
-        goto('/puzzleChoosePage')
+    const naviagtePuzzzleList = () => {
+        goto('/puzzleList')
     }
 
 </script>
@@ -24,7 +24,7 @@
         {t_subTagLine}
     </p>
 
-    <button on:click={naviagtePuzzzlePage} class="cta-btn">
+    <button on:click={naviagtePuzzzleList} class="cta-btn">
         <p>{t_ctaBtnText}</p>
         <img src="/downArrow.webp" alt="">
     </button>
@@ -32,7 +32,7 @@
     <div class="hero-img-container">
         <div class="feature-1">
             <p>{t_featureOne}</p>
-            <img class="feature-img " src="./feature1.png" alt="">
+            <img class="feature-img" src="./feature1.png" alt="">
             <p>{t_feature_one_desc}</p>
         </div>
         <div class="hero-img">
@@ -82,14 +82,17 @@
         color: white;
     }
     .hero-img{
-        width: 90%;
+        width: 80%;
         display: block;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
         background-color: white;
         margin-top: 40px;
         border-radius: 20px;
         box-shadow: -10px 10px 10px 2px black;
+    }
+    .hero-img img{
+        border-radius: 10px;
     }
 
     p{
