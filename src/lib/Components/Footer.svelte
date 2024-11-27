@@ -19,7 +19,7 @@
 <footer class="">
     <div class="container">
         <div class="logos">
-            <img class="app-logo" src="/logo-transparent.png" alt="">
+            <img class="app-logo" src="/logo2.jpg" alt="">
             <div class="social-media-logos">
                 <img src="/instagram-fill.svg" alt="">
                 <img src="/twitter-fill.svg" alt="">
@@ -83,7 +83,8 @@
     }
 
     .app-logo{
-        width: 95px;
+        width: 64px;
+        border-radius: 50%;
         margin: 0 auto;
         display: block;
     }
@@ -91,6 +92,7 @@
         display: flex;
         gap: 20px;
         align-items: center;
+        margin-top: 20px;
     }
     .links{
         display: flex;
@@ -142,12 +144,15 @@
             flex-direction: row;
             justify-content:space-around;
         }
+        .social-media-logos{
+            margin-top: 0px;
+        }
         .logos{
             display: flex;
             gap: 20px;
         }
         .app-logo{
-            width: 150px;
+            width: 90px;
         }
         .links{
             gap: 30px;

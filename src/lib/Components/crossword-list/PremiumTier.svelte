@@ -87,11 +87,11 @@
             <img class="badge" src="/premium-badge.svg" alt="">
             {t_premium_crosswords}
         </p>
-        <div class="search-container">
+        <form on:submit={handleSearch} class="search-container">
             <label class="search-label" for="search">{t_cross_word}-</label>
             <input id='search' class="search" bind:value={searchTerm} type="number">
-            <button on:click={handleSearch} class="search-btn">Search</button>
-        </div>
+            <button disabled={!searchTerm} on:click={handleSearch} class="search-btn">Search</button>
+        </form>
     
         <div class="premium-crosswords cw-container">
             {#each premiumTierCW as cw,i}
@@ -128,13 +128,24 @@
         border-radius: 10px;
         padding: 2px 10px;
     }
+    .search-btn:disabled{
+        background-color: gray;
+        color: black;
+        opacity: 0.4;
+    }
     .search{
         border: 1px solid gray;
         border-radius: 10px;
         margin: 10px auto;
         display: block;
         width: 100%;
-
+        padding: 0 10px;
+        -moz-appearance: textfield;
+    }
+    .search::-webkit-inner-spin-button,
+    .search::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
     }
      .tier-title{
         text-align: center;
@@ -204,7 +215,6 @@
         margin-top: 20px;
     }
 
-
     @media(min-width:576px){
         .cw-name{
             font-size: 14px;
@@ -212,11 +222,15 @@
         .status-name{
             font-size: 12px;
         }
+        .cw-container{
+            grid-template-columns:repeat(4,1fr) ;
+            padding:0 10px;
+        }
     }
    
     @media(min-width:786px){
         .cw-container{
-            grid-template-columns:repeat(4,1fr) ;
+            grid-template-columns:repeat(5,1fr) ;
             gap: 20px;
         }
         .crossword-img{

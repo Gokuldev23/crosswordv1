@@ -27,6 +27,18 @@ export let freeTierCW = [
         name:'cross-word-6',
         img:'/cross-word-2.png'
     },
+    {
+        name:'cross-word-7',
+        img:'/cross-word-2.png'
+    },
+    {
+        name:'cross-word-8',
+        img:'/cross-word-2.png'
+    },
+    {
+        name:'cross-word-9',
+        img:'/cross-word-2.png'
+    },
 ]
 
 

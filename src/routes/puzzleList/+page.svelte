@@ -42,6 +42,7 @@
 
 <style>
     main{
+        min-height: 100vh;
         min-height: 100dvh;
         background-color: white;
         padding: 20px 10px;
