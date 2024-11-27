@@ -1,15 +1,12 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { enhancedImages } from '@sveltejs/enhanced-img';
-import fs from 'fs'
 
 
 export default defineConfig({
 	server: {
-		https: {
-		  key: fs.readFileSync('./localhost.key'),
-		  cert: fs.readFileSync('./localhost.crt')
-		}
+		port:5000,
+		host:'0.0.0.0'
 	  },
 	plugins: [
 		enhancedImages(),
